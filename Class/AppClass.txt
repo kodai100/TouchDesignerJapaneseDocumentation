@@ -1,0 +1,17 @@
+このクラスは、バージョンやインストールフォルダなどの、特定のアプリケーションの詳細を含んでいます。
+これはアプリケーションんのプロジェクトからアクセス可能で、自動的にインポートされるtdモジュール内で定義されています。
+
+NOTE: ビルトイン変数や文字列がvar('DESKTOP'), var('MYDOCUMENTS'), var('TOENAME')などのエクスプレッションを通して利用できるVariables及びDialogs->Variables参照
+
+Members
+architecture	(Read Only) コンパイルアーキテクチャ. 一般的に32または64bit.
+binFolder	(Read Only) バイナリを含んだインストールフォルダ
+build	(Read Only) アプリケーションビルド番号
+configFolder	(Read Only) configrationファイルを含んだインストールフォルダ
+installFolder	(Read Only) メインインストールフォルダ
+product	(Read Only) アプリケーション名. 例) 'TouchDesigner', 'TouchPlayer'. 参照: licences.type in Licences Class.
+recentFiles	(Get or set) 最近保存、またはロードしたファイルのリスト
+samplesFolder	(Read Only) configrationファイルを含んだインストールフォルダ
+version	(Read Only) アプリケーションバージョン番号
+power	(Get or set) プロセス実行状況. Trueであれば、プロセスは実行中, Falseであれば停止中. これはメインインタフェースのPowerボタンと同一ですが, 単にプレイバーのポーズやストップボタンを使用するよりも効果的です.
+  例) app.power = False # powerボタンをオフにする.
