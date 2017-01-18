@@ -1,0 +1,13 @@
+Text DATに対して
+me.parent().setVar('変数名', 初期値)
+非sクティベート状態で右クリック → RunScript
+
+変数の利用
+me.var('変数名')
+
+
+Storage
+me.parent().store('変数名', 初期値)
+
+ストレージの利用
+me.fetch('変数名')
